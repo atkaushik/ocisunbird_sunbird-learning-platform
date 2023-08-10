@@ -56,7 +56,7 @@ ALTER TABLE {{ hierarchy_keyspace_name }}.content_hierarchy ADD relational_metad
 
 {% endif %}
 
-##commented triggers - Amit Kaushik
+{# ##commented triggers - Amit Kaushik #}
 {# CREATE TRIGGER IF NOT EXISTS content_data_trigger ON {{ content_keyspace_name }}.content_data USING 'org.sunbird.cassandra.triggers.TransactionEventTrigger';
 CREATE TRIGGER IF NOT EXISTS question_data_trigger ON {{ content_keyspace_name }}.question_data USING 'org.sunbird.cassandra.triggers.TransactionEventTrigger';
 CREATE TRIGGER IF NOT EXISTS framework_hierarchy_trigger ON {{ hierarchy_keyspace_name }}.framework_hierarchy USING 'org.sunbird.cassandra.triggers.TransactionEventTrigger';
